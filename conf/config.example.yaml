@@ -1,0 +1,13 @@
+app:
+  name: alteisen
+  version: v0.1.0
+
+http_serv:
+  addr: 6666
+  mode: debug
+  read_timeout: 10s
+  write_timeout: 10s
+
+bot:
+  token: 1111111111
+  base_url: https://127.0.0.1
