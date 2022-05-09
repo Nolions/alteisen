@@ -24,8 +24,9 @@ type HttpServ struct {
 }
 
 type Bot struct {
-	Token   string `mapstructure:"token"`
-	BaseUrl string `mapstructure:"base_url"`
+	TargetChatId int64  `mapstructure:"target_chat_id"`
+	Token        string `mapstructure:"token"`
+	BaseUrl      string `mapstructure:"base_url"`
 }
 
 func init() {

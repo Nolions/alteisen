@@ -9,5 +9,6 @@ http_serv:
   write_timeout: 10s
 
 bot:
+  target_chat_id: 1
   token: 1111111111
   base_url: https://127.0.0.1

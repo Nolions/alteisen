@@ -11,18 +11,20 @@ import (
 )
 
 type Application struct {
-	Ctx context.Context
-	Bot *tgbotapi.BotAPI
+	Ctx  context.Context
+	Bot  *tgbotapi.BotAPI
+	Conf *conf.Bot
 }
 
 type Server struct {
 	HttpServer *http.Server
 }
 
-func New(ctx context.Context, bot *tgbotapi.BotAPI) *Application {
+func New(ctx context.Context, bot *tgbotapi.BotAPI, config *conf.Bot) *Application {
 	return &Application{
 		Ctx: ctx,
 		Bot: bot,
+		Conf: config,
 	}
 }
 

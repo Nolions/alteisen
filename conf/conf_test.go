@@ -20,7 +20,9 @@ func TestNew(t *testing.T) {
 			WriteTimeout: "10s",
 		},
 		Bot: Bot{
+			TargetChatId: 1,
 			Token: "1111111111",
+			BaseUrl: "https://127.0.0.1",
 		},
 	}
 

@@ -37,7 +37,7 @@ func main() {
 
 	//config.Bot.BaseUrl
 
-	webhookUrl := config.Bot.BaseUrl +"/webhook/" + bot.Token
+	webhookUrl := config.Bot.BaseUrl + "/webhook/" + bot.Token
 	_, err = bot.SetWebhook(tgbotapi.NewWebhook(webhookUrl))
 	println(webhookUrl)
 	if err != nil {
@@ -45,7 +45,7 @@ func main() {
 	}
 
 	ctx := context.Background()
-	app := server.New(ctx, bot)
+	app := server.New(ctx, bot, &config.Bot)
 	serv := server.NewHttpServer(app, &config.HttpServ)
 	serv.Run()
 
