@@ -4,7 +4,7 @@
 
 ## Architecture
 
-![./docs/architecture_system_process.pn](./docs/architecture_system_process.png)
+![./docs/architecture_system_process.png](./docs/architecture_system_process.png)
 
 ## Deploy Guide
 
@@ -13,7 +13,7 @@
 use config yaml
 
 ```shell
-cp conf/config.example.yaml ./yaml
+cp conf/config.example.yaml ./config.yaml
 ```
 
 PS 也可以使用環境變數來指定特定參數值 EX:
